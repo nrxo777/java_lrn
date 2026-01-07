@@ -149,14 +149,29 @@ public class Main {
 //        }
 
         // ======= Do While Loop =======
-        Scanner sC = new Scanner(System.in);
-        int num;
-        do {
-            System.out.print("Type a number: ");
-            num = sC.nextInt();
-            System.out.println("here's your number: " + num);
-        } while (num >= 5);
-        System.out.println("------- THE END -------");
+//        Scanner sC = new Scanner(System.in);
+//        int num;
+//        do {
+//            System.out.print("Type a number: ");
+//            num = sC.nextInt();
+//            System.out.println("here's your number: " + num);
+//        } while (num >= 5);
+//        System.out.println("------- THE END -------");
+
+        // ======= BREAK / CONTINUE =======
+        int z = 1;
+        while (true){
+                if(z == 7){
+                    z++;
+                    continue;
+                }
+                System.out.println("number: " + z);
+                z++; // z = z + 1
+                if(z > 10){
+                    break;
+                }
+
+        }
 
     }
 }
