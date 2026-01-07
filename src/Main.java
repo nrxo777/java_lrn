@@ -125,15 +125,38 @@ public class Main {
 //        if(x < 50 || y < 90)
 //            System.out.println("Both are atleast less then 100");
 
-        switch(x){
-            case 1:
-                System.out.println("it's less then 100");
-                break;
-            case 2:
-                System.out.println("it's dumb");
-                break;
-            default:
-                System.out.println("default");
-        }
+//        switch(x){
+//            case 1:
+//                System.out.println("it's less then 100");
+//                break;
+//            case 2:
+//                System.out.println("it's dumb");
+//                break;
+//            default:
+//                System.out.println("default");
+//        }
+
+        // ======= For Loop =======
+
+//        for(x = 100; x >= 0; x--){
+//            System.out.println("number: " + x);
+//        }
+
+        // ======= While Loop =======
+//        while (y >= 1){
+//            System.out.println(y);
+//            y--;
+//        }
+
+        // ======= Do While Loop =======
+        Scanner sC = new Scanner(System.in);
+        int num;
+        do {
+            System.out.print("Type a number: ");
+            num = sC.nextInt();
+            System.out.println("here's your number: " + num);
+        } while (num >= 5);
+        System.out.println("------- THE END -------");
+
     }
 }
